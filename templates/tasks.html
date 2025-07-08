@@ -5,7 +5,7 @@
         <ul>
             {% for task in tasks %} 
               <li> {{task}}
-                 <a href="{{ url_for('deletetask', task_id=loop.index0) }}">❌</a>
+                 <a href="{{ url_for('delete_task', task_id=loop.index0) }}">❌</a>
             </li>
             {% endfor %}
         </ul>
